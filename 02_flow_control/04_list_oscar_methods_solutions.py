@@ -94,6 +94,36 @@ print (7 in lista)
 # Modifica el primer elemento de la lista referencia a 10.
 # Imprime las cuatro listas (original, copia_1, copia_2, referencia) y observa los cambios.
 
+print ("Ejercicio 5: Copia vs. Referencia")
+print ("Crea una lista llamada original con los números [1, 2, 3].")
+original = [1, 2, 3]
+print (original)
+print ("Crea una copia de la lista original llamada copia_1 usando slicing.")
+copia_1 = original[:]
+print (copia_1)
+print ("Crea otra copia llamada copia_2 usando copy().")
+copia_2 = original.copy()
+print (copia_2)
+print ("Crea una referencia a la lista original llamada referencia.")
+referencia = original
+print (referencia)
+print ("Modifica el primer elemento de la lista referencia a 10.")
+referencia [0] = 10
+print (referencia)
+print ("Imprime las cuatro listas (original, copia_1, copia_2, referencia) y observa los cambios.")
+print (original)
+print (copia_1)
+print (copia_2)
+print (referencia)
+
+
+
 # Ejercicio 6: Ordenar strings sin diferenciar mayúsculas y minúsculas.
 # Crea una lista con las siguientes cadenas: ["Manzana", "pera", "BANANA", "naranja"].
 # Ordena la lista sin diferenciar entre mayúsculas y minúsculas.
+
+print ("Ejercicio 6: Ordenar strings sin diferenciar mayúsculas y minúsculas.")
+print ("Ordena la lista sin diferenciar entre mayúsculas y minúsculas.")
+lista = ["Manzana", "pera", "BANANA", "naranja"]
+lista.sort(key=str.lower)
+print (lista)
