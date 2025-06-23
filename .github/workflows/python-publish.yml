@@ -15,5 +15,7 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.9'
+      - name: instalar dependencias
+        run: pip install request
       - name: Ejecutar script Python
         run: python 07_scraping/01_basic.py
