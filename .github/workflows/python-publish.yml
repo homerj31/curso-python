@@ -21,3 +21,6 @@ jobs:
           pip install requests
       - name: Ejecutar script Python
         run: python 07_scraping/01_basic.py
+      - name: Ejecutar script Python
+        run: python 07_scraping/02_beautiful.py
+        
