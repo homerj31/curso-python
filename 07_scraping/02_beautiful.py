@@ -18,14 +18,14 @@ if response.status_code == 200:
     print(f"El título de la web es: {title_tag.text}")
 
   # find price using bs
-   price_span = soup.find('span', class_='rc-prices-fullprice')
-   if price_span:
-     print(f"El precio del producto es: {price_span.text}")
+  price_span = soup.find('span', class_='rc-prices-fullprice')
+  if price_span:
+    print(f"El precio del producto es: {price_span.text}")
 
   # find all the prices
-   prices_span = soup.find_all(class_='rc-prices-fullprice')
-   for price in prices_span:
-     print(f"El precio del producto es: {price.text}")
+  prices_span = soup.find_all(class_='rc-prices-fullprice')
+  for price in prices_span:
+    print(f"El precio del producto es: {price.text}")
 
   # find each product and get the name and the price
   products = soup.find_all(class_='rc-productselection-item')
