@@ -16,4 +16,4 @@ jobs:
         with:
           python-version: '3.9'
       - name: Ejecutar script Python
-        run: python 97_scraping/01_basic.py
+        run: python 07_scraping/01_basic.py
